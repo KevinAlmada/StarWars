@@ -1,0 +1,26 @@
+.prevNextContainer{
+    margin-top:1.5rem;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nextButton{
+        border-radius: 5px 40% 40% 5px;
+    }
+    .prevButton{
+        border-radius: 40% 5px 5px 40% ;
+    }
+}
+.hide{
+    transform: scale(0);
+}
+.defButton{
+    font-family: 'Star Jedi';
+    color: $starWarsColor;
+    background-image: url("../../../public/img/cardBackground.png");
+    padding: 0.5rem;
+    border: 2px $starWarsColor solid;
+    letter-spacing: 2px;
+    width: 70px;
+    cursor: pointer;
+}

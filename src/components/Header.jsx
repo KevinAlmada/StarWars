@@ -10,10 +10,12 @@ const Header = () => {
     }
     return (
         <header>
-            <nav>
-                <NavLink to="/fav">favoritos</NavLink>
-                <NavLink to="/" onClick={() => clickHandlerSearchResults()}>home</NavLink>
+            <nav className='headerNav'>
+                <NavLink to="/fav">FAvS</NavLink>
             </nav>
+            <NavLink to="/" onClick={() => clickHandlerSearchResults()}>
+            <img src="./img/starWarsLogo.png" alt="starwarslogo" className='logoHeader'/>
+            </NavLink>
             <SearchBar/>
         </header>
     )

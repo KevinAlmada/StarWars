@@ -1,18 +1,14 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { addFavPlanet } from '../redux/FavDucks'
+import { useSelector } from 'react-redux'
+import Card from './Card'
 const SearchResults = () => {
-    const dispatch = useDispatch()
     const planetResults = useSelector(store => store.planets.searchPlanets)
     return (
-        <div>
-             {
-                planetResults.map(planet => <div key={planet.name}>
-                    <p>{planet.name}</p>
-                    <button onClick={() => dispatch(addFavPlanet(planet))}>corazon</button>
-                </div>)
-            }
-        </div>
+        <section>
+                {
+                    planetResults.map(planet => <Card key={planet.name} planet={planet} />)
+                }
+        </section>
     )
 }
 

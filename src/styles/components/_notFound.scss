@@ -1,0 +1,13 @@
+.NotFoundYoda{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h2{
+        font-size: 2rem;
+        font-family: 'Star out';
+    }
+    .goBackButton{
+        border-radius: 20px;
+    }
+    
+}

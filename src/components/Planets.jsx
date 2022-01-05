@@ -1,18 +1,18 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
+
 import PlanetsToShow from './PlanetsToShow'
 import SearchResults from './SearchResults'
 
 const Planets = () => {
-    const dispatch = useDispatch();
     let planetasResults = useSelector(store => store.planets.searchPlanets);
     return (
-        <div>
+        <div className='planetsContainer'>
             {   planetasResults.length > 0 ?
-            <div>
-                <p>resultados</p>
+            <>
+                <h2 className='resultadoTitle'>RESULTADoS : {planetasResults.length}</h2>
                 <SearchResults/>
-            </div>:
+            </>:
                 <PlanetsToShow/>
             }
         </div>

@@ -1,0 +1,43 @@
+.planetsContainer{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    section{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        max-width: 1000px;
+        .planetCard{
+            background-image: url("../../../public/img/cardBackground.png");
+            position: relative;
+            padding-left:10px;
+            width: 230px;
+            border: 2px $starWarsColor solid;
+            color: white;
+            border-radius: 10px;
+            letter-spacing: 1px;
+            .planetCardH2{
+                font-family: 'Star Jedi';
+                color: $starWarsColor;
+            }
+            .planetCardH4{
+                font-family: 'Star Jedi';
+            }
+            span{
+                font-family: 'Montserrat', sans-serif;
+                margin: 0 auto
+            }
+            button{
+                color: $starWarsColor;
+                background: 0;
+                border: none;
+                font-size: 1.2rem;
+                position: absolute;
+                top: 0.7rem;
+                right: 1rem
+            }
+        };
+    }
+}

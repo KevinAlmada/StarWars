@@ -1,0 +1,51 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Star Jedi';
+    background-image: url("../../../public/img/starWarsFondo.jpg");
+    background-size: cover;
+    .headerNav{
+        width: 150px;
+        display: flex;
+        justify-content: space-between;   
+    }
+    .headerNav a{
+        font-size: 1.4rem;
+        padding: 5px;
+        color: $starWarsColor; 
+        font-family: 'Star JEdi';
+    }
+    .logoHeader{
+        width: 300px;
+    }
+    .searchBarHeader{
+        display: flex;
+        input{
+            width: 150px;
+            color: $starWarsColor;
+            height: 30px;
+            border-radius: 15px 0 0 15px;
+            padding-left: 10px;
+            background-color: black;
+            border: 2px $starWarsColor solid;
+            border-right: 0;
+            outline: none;
+            transition: 0.5s all ease;
+            font-family: 'Star Jedi';
+            &:focus {
+                background-color: $starWarsColor;
+                color: black;
+              }
+        }
+        button{
+            padding: 0 4px;
+            background: transparent;
+            color: $starWarsColor;
+            border: 2px $starWarsColor solid;
+            border-left: 0;
+            height: 30px;
+            border-radius: 0px 15px 15px 0px;
+        }
+    }
+}
